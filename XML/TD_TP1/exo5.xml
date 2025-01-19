@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cv>
+    <!-- photos de profil -->
+    <photos_profil>chemin_de_l'image</photos_profil>
+    <Nom>Votre Nom</Nom>
+    <info_pers>
+        <profil>TEXTE</profil>
+    </info_pers>
+    <coordonneees>
+        <tel >7x xxx xx xx</tel>
+        <email>adressemail@gmail.com</email>
+    </coordonneees>
+    <competences></competences>
+    <langues></langues>
+</cv>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<text>
+    <font small>Un petit texte </font>
+    <!-- <font_small>Un petit texte </font_small> -->
+
+    <font big>Un grand texte</font>
+    <!-- <font_big>Un grand texte</font_big> -->
+</text>
+
+
+<top>   
+    <item> Question 1<item answer="a">
+    <!-- <item answer="a">Question 1</item> -->
+
+    <item>Quetion 2 <item answer="b">
+    <!-- <item answer="b">Question 2</item> -->
+
+
+     <item>Quetion 2 <item answer="c">
+    <!-- <item answer="c">Question 3</item> -->
+
+</top>

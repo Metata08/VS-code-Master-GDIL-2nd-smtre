@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<informations>
+    <courier>
+        <destinataire>Fatou Ndiaye</destinataire>
+        <adr>parcelle N22</adr>
+        <localite>Ngallele Saint-Louis Senegal</localite>
+    </courier>
+
+    <courier>
+        <destinataire>Université Gaston Berger</destinataire>
+        <adr>BP : 234</adr>
+        <localite>Saint-Louis - Sénégal</localite>
+    </courier>
+</informations>

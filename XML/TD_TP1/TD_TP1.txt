@@ -1,0 +1,41 @@
+
+Exercice 1. Questions de compréhension
+
+ 1. Citez 2 avantages de XML par rapport à HTML.
+
+    1er avantage : XML permet le tranfers de donnees entre application et HTML ne le permet pas 
+    2eme avantage : possibilite de creer ses propres balises
+    3eme avantage : lisibilite cote machine et humaine
+
+2. Quelles sont les règles de nommage en XML ?
+
+    commence par une lettre alphabetique ou _
+    les autres caracteres doienvent etre alphanumerique 
+    les caracteres speciaux sont pas accordes 
+    eviter les mots commencant par "XML"
+
+3. Quand est-ce qu’un document XML est dit bien formé ?
+
+    un seul elmt racine 
+    et chaque et fils d'un autre element 
+
+4.
+Question 1. Combien y a-t-il d’éléments, d’attributs, de nœuds de type texte ?
+5 elmts , 2 noeuds , 0 attributs
+Question 2. Quels sont les fils de mfrac ? Quel est le père de mi ? lLe père de mfrac ?
+
+
+Exercice 2. Syntaxe XML
+
+1. <Numero_Carte_Etudiant>P32 45 32</ Numero_Carte_Etudiant > : faux :espace 
+2. <Prime_d’ancienneté>98 NY 32</ Prime_d’ancienneté >  :faux :espace 
+3. <month-day-year>7/23/2001</month-day-year> :vrai
+4. <nom de famille>Saliou</nom de famille> :faux :espace 
+5. <àçttûä>øåú</àçttûä>:vrai
+6. <month/day/year>7/23/2001</month/day/year> :faux :slash
+7. <téléphone>011 33 91 55 27 55 27</téléphone> ::vrai
+8. <4-lalala>I-610</4-lalala>:faux : commence par un chiffre
+
+Exercice 3. Documents bien formés
+
+Exercice 4. Création de documents XML
