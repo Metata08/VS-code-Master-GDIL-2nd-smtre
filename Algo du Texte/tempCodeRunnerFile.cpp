@@ -1,0 +1,1 @@
+ hs = hachage(T.substr(i,taille));

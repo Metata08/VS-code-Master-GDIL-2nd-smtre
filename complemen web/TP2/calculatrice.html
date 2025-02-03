@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="caculatrice.css">
+</head>
+
+<body>
+
+
+    <div id="cal">
+        <div id="conteneurResultat">
+            <input type="text" id="resultat">
+        </div>
+
+        <div id="conteneurButons">
+            <div class="ligneButon">
+                <button type="button" onclick="effacer()">AC</button>
+                <button type="button" onclick="effacerUn()">CE</button>
+                <button type="button" onclick="ajouterCaractere('%')">%</button>
+                <button type="button" onclick="ajouterCaractere('/')">/</button>
+            </div>
+
+            <div class="ligneButon">
+                <button type="button" onclick="ajouterCaractere(7)">7</button>
+                <button type="button" onclick="ajouterCaractere(8)">8</button>
+                <button type="button" onclick="ajouterCaractere(9)">9</button>
+                <button type="button" onclick="ajouterCaractere('*')">*</button>
+            </div>
+
+
+            <div class="ligneButon">
+                <button type="button" onclick="ajouterCaractere(5)">5</button>
+                <button type="button" onclick="ajouterCaractere(6)">6</button>
+                <button type="button" onclick="ajouterCaractere(4)">4</button>
+                <button type="button" onclick="ajouterCaractere('*')">-</button>
+
+            </div>
+
+            <div class="ligneButon">
+                <button type="button" onclick="ajouterCaractere(1)">1</button>
+                <button type="button" onclick="ajouterCaractere(2)">2</button>
+                <button type="button" onclick="ajouterCaractere(3)">3</button>
+                <button type="button" onclick="ajouterCaractere('+')">+</button>
+            </div>
+
+            <div id="lastLine">
+                <button type="button" onclick="ajouterCaractere(0)">0</button>
+                <button type="button" onclick="ajouterCaractere('.')">.</button>
+                <button type="button" id="egal" onclick="calculer()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calculatrice.js"> </script>
+
+</body>
+
+</html>

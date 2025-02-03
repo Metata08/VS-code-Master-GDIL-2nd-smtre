@@ -1,0 +1,65 @@
+body{
+    display:flex;
+    justify-content: center;
+}
+
+
+#cal {
+    /* justify-content: center; */
+    justify-items: center;
+    display: flexbox;
+    background-color: rgb(240, 157, 157);
+    height: max-content;
+    width:0 auto;
+    margin:100px 0;
+
+}
+
+#conteneurResultat{
+    display:flex;
+    justify-content: center;
+    height: 10%;
+    border-radius: 25px;
+}
+
+input{
+    margin: 25px;
+    border-radius: 25px;
+    width: 70%;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#conteneurButons {
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+#lastLine{
+    margin: auto 70px  ;
+    justify-content: center;
+}
+
+
+div.lineButton {
+    /* display; */
+
+    margin: auto;
+}
+
+button{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 1px;
+    height: 100px;
+    width: 150px; 
+    border-radius: 25px;
+
+}
+button:hover {
+    background-color: green;
+}

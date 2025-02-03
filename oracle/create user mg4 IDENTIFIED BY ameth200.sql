@@ -1,0 +1,2 @@
+create user mg4 IDENTIFIED BY ameth200 ;
+GRANT DB_DEVELOPER_ROLE TO mg4;   
