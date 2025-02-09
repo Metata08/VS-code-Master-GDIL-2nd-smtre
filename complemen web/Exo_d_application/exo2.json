@@ -1,0 +1,22 @@
+{
+    "personne": [
+        {
+            "prenom": "Fatou",
+            "nom": "Sall",
+            "age": 22,
+            "adresse": [
+                {
+                    "localite": "Ngallele",
+                    "ville": "New york",
+                    "numero": "124"
+                }
+            ],
+            "telephone": [
+                {
+                    "Personnel": "77xxxxxxx",
+                    "profesionnel": "33YYYYYYY"
+                }
+            ]
+        }
+    ]
+}

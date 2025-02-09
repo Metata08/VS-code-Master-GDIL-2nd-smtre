@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .error { color: red; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulaire d'inscription </h1>
+    <form id="formulaire">
+        <table>
+            <tr class="champ">
+                <td><label for="etatCivil">Etat civil </label></td>
+                <td>
+                    <select name="etatCivil" id="listeEtat">
+                        <option value="Monsieur">M.</option>
+                        <option value="Madamme">Mme.</option>
+                    </select>
+                </td>
+            </tr>
+            <tr class="champ">
+                <td><label for="nom">Nom</label></td>
+                <td><input type="text" name="nom" id="nom"></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="prenom">Prénom </label></td>
+                <td><input type="text" name="prenom" id="prenom"></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="fullName">Nom complet </label></td>
+                <td><input type="text" name="fullName" id="fullName" readonly></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="niveau">Niveau en JavaScript</label></td>
+                <td>
+                    <input type="range" name="niveau" id="niveau" min="0" max="100">
+                    <span id="niveauValue"></span>
+                </td>
+            </tr>
+            <tr class="champ">
+                <td><label for="password">Mot de passe</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="confirmPassword">Confirmer le mot de passe</label></td>
+                <td><input type="password" name="confirmPassword" id="confirmPassword"></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="showPassword">Afficher le mot de passe</label></td>
+                <td><input type="checkbox" id="showPassword"></td>
+            </tr>
+            <tr class="champ">
+                <td><label for="dateNaissance">Date de naissance</label></td>
+                <td><input type="date" name="dateNaissance" id="dateNaissance"></td>
+            </tr>
+            <tr class="champ">
+                <td colspan="2"><button type="submit" id="submitBtn">Envoyer</button></td>
+            </tr>
+        </table>
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

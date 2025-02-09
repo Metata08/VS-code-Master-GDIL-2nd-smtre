@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div >
+        <h1>Formulaire d'inscription </h1>
+        <form action="####" method="post" id="formulaire">
+
+
+            <table>
+                <tr class="champ">
+                    <td>
+                        <label for="etatCivil">Etat civil </label>
+
+                    </td>
+
+                    <td>
+                        <select name="etatCivil" id="listeEtat">
+                            <option value="Monsieur">M.</option>
+                            <option value="Madamme">Mme.</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="champ">
+                    <td>
+                        <label for="nom">Nom</label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="nom" id="nom">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="prenom">Prénom </label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="prenom" id="prenom">
+
+                    </td>
+                </tr>
+                <tr class="champ">
+                    <td>
+                        <label for="fullName">Nom complet </label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="fullName" id="fullName">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="date_naiss">Date de naissance</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date_naiss" id="date_naiss" min="1975-01-01" max="">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="nivJS">Niveau en JavaScript</label>
+        
+                    </td>
+                    <td>
+                        <input type="range" id="nivJS" min="0" max="100" name="nivJS">
+                        <span id="valNiveau"></span>
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="color">Couleur préférée</label>
+
+                    </td>
+                    <td>
+                        <input type="color" name="color" id="color" value="black">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="password">Mot de passe</label>
+
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="conf_passworod">Mot de passe (Configuration)</label>
+
+                    </td>
+                    <td>
+                        <input type="password" name="conf_passworod" id="conf_passworod">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="hide_password">Afficher mot de passe </label>
+
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hide_password" id="hide_password">
+
+                    </td>
+                </tr>
+
+                <tr class="champ">
+                    <td>
+                        <label for="desc">Description</label>
+
+                    </td>
+                    <td>
+                        <input type="text" name="desc" id="desc">
+
+                    </td>
+                </tr>
+
+            </table>
+
+
+            <button type="reset" id="init">Renitialiser</button>
+            <button type="submit" id="bntEnvoyer">Envoyer</button>
+
+        </form>
+
+    </div>
+
+    <div id="result"></div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

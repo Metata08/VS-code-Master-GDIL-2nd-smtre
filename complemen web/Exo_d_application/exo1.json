@@ -1,0 +1,25 @@
+{
+    "employe": [
+        {
+            "nom": "Fatou",
+            "age": "30",
+            "profession": "chef de projet "
+        },
+        {
+            "nom": "Samba",
+            "age": "20",
+            "profession": "Stagiaire "
+        }
+    ],
+    "film": [
+        {
+            "titre": "Avatar",
+            "dateDeSortie": "2009",
+            "acteurs": [
+                "Sam Wothington",
+                "Zoe Saldana",
+                "Sigourney Weaver"
+            ]
+        }
+    ]
+}

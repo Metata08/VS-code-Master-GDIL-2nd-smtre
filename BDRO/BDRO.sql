@@ -31,23 +31,23 @@ create table comptegeneriquetable of comptegenerique (
 );
 
 
-create or replace type compteepargne under comptegenerique (
+create or replace type CompteEpargnetable under comptegenerique (
    tauxint number
 );
 
 
-create table compteepargnetable of compteepargne (
+create table compteepargnetable of CompteEpargnetable (
    constraint pk_compte_epargne primary key ( codecompte )
 );
 
 
-create or replace type comptecheque under comptegenerique (
+create or replace type CompteChequetable under comptegenerique (
       nombreoperation number,
       signatures      t_signature_table
 );
 
 
-create table comptechequetable of comptecheque (
+create table comptechequetable of CompteChequetable (
    constraint pk_compte_cheque primary key ( codecompte )
 )
 nested table signatures store as tab_signatures;

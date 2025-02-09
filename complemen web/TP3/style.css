@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    justify-self: center;
+    padding-left: 68px;
+
+}
+
+.champ td {
+    padding: 10px;
+    /* vertical-align: middle; */
+}
+
+.champ label {
+
+    display: inline-block;
+    font-size: larger;
+}
+
+.rouge{
+    color: red;
+    /* background-color: red; */
+}
