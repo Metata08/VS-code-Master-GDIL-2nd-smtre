@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+#header_facebook {
+  background-color: rgb(17, 17, 142);
+}
+
+.facebook {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+
+}
+
+
+/* bouton de connexion de facebook  */
+
+.btn_connexion{
+  margin-top:35%;
+  background-color: #3d5fa9;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+
+.textface { 
+  /* font-family: 'Times New Roman', Times, serif; */
+
+  color: red !important;
+
+}
+
+.textform{
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+
+  font-family:sans-serif;
+
+}

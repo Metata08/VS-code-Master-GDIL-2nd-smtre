@@ -42,4 +42,7 @@ reservoir_vide("").then(function (result) {
     return voyage(result);
 }).then(function (result) {
     console.log(result+"FAIT !");
+}).catch(function (err) {
+    console.error("Erreur !!! ",err);
+
 });

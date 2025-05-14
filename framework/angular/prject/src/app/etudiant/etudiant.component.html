@@ -1,0 +1,23 @@
+<div class="id-etudiant text-center">
+    {{idEtudiant}}
+</div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Premon</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let etudiant of listEtudiants">
+        <th scope="row">{{etudiant.id}}</th>
+        <td>{{etudiant.nom}}</td>
+        <td>{{etudiant.prenom}}</td>
+        <td>{{etudiant.age}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

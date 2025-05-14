@@ -7,6 +7,9 @@
     <script src="jquery-3.7.1.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
 </head>
+<style>
+    h1[class~=title] + p::first-letter{ color: red;} 
+</style>
 <body>
 
     <div id="pa">
@@ -18,5 +21,26 @@
         $("c").hide();
         
     </script>
+
+
+    <div>
+        <h1 class="title">
+            premiere titre 
+        </h1>
+        <p> premiere pragraphe </p>
+        <br>
+        <h1 class="title">
+            premiere titre 
+        </h1>
+        <span> span</span>
+        <p> premiere pragraphe </p>
+        <p> second pragraphe </p>
+
+    </div>
+
+    <mat-progress-bar
+        mode="indeterminate">
+    </mat-progress-bar>
+
 </body>
 </html>

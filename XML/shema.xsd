@@ -1,0 +1,16 @@
+<xsd:element name="prix" type="t">
+</xsd:element>
+
+
+
+
+
+
+<xsd:complextype name="t">
+    <xsd:simpleContent>
+        <xsd:extension base="xsd:decimal"/>
+        <xsd:attribute name="devise" type="xs:string" fixed="FCFA"/>
+    </xsd:simpleContent>
+</xsd:complextype>
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email
+    </title>
+
+
+</head>
+<body>
+    <form>
+        <input type="text" name="email" id="email" placeholder="Email">
+        <br><br>
+        <button type="submit" onclick="validat()">Enregistrer</button>
+    </form>
+
+    <script>
+        function validat(){
+            var mail=document.getElementById('email').value;
+            var patern= /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+
+            if(patern.text(mail)){
+                alert("email valide");
+                return true;
+            }else{
+                alert("email invalide");
+                return false;
+            }
+        }
+
+        validat()
+    </script>
+</body>
+</html>

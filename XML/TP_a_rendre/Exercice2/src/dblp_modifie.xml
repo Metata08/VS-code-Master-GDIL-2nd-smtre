@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<dblp mdate="2025-04-17">
+      
+  <!-- Exemples existants dans le Doc du TP  -->
+      
+  <article key="journals/cacm/Gentry10" mdate="2010-04-26">
+            
+    <author>Craig Gentry</author>
+            
+    <title>Computing arbitrary functions of encrypted data.</title>
+            
+    <pages>97-105</pages>
+            
+    <year>2010</year>
+            
+    <volume>53</volume>
+            
+    <journal>Commun. ACM</journal>
+            
+    <number>3</number>
+            
+    <ee>http://doi.acm.org/10.1145/1666420.1666444</ee>
+            
+    <url>db/journals/cacm/cacm53.html#Gentry10</url>
+        
+  </article>
+      
+  <inproceedings key="conf/focs/Yao82a" mdate="2011-10-19">
+            
+    <title>Theory and Applications of Trapdoor Functions (Extended Abstract)</title>
+            
+    <author>Andrew Chi-Chih Yao</author>
+            
+    <pages>80-91</pages>
+            
+    <crossref>conf/focs/FOCS23</crossref>
+            
+    <year>1982</year>
+            
+    <booktitle>FOCS</booktitle>
+            
+    <url>db/conf/focs/focs82.html#Yao82a</url>
+            
+    <ee>http://doi.ieeecomputersociety.org/10.1109/SFCS.1982.4</ee>
+        
+  </inproceedings>
+      
+  <www key="homepages/g/OdedGoldreich" mdate="2023-03-23">
+            
+    <author>Oded Goldreich</author>
+            
+    <title>Nouveau titre de la page personnelle</title>
+            
+    <url>http://www.wisdom.weizmann.ac.il/~oded/</url>
+        
+    <author>Le Nouvel Auuteur</author>
+  </www>
+      
+  <!-- Données fictives  -->
+      
+  <article key="journals/example/Smith20" mdate="2020-05-10">
+            
+    <author>John Smith</author>
+            
+    <title>Example of Photo Metadata in XML</title>
+            
+    <year>2020</year>
+            
+    <journal>Journal of XML Examples</journal>
+            
+    <url>http://example.org/paper.pdf</url>
+            
+    <ee>http://doi.org/10.1234/example</ee>
+            
+    <note type="photo">http://example.org/photos/JohnSmith.jpg</note>
+            
+    <publisher>Example Publishing</publisher>
+        
+  </article>
+      
+  <inproceedings key="conf/xml/Johnson19" mdate="2019-08-15">
+            
+    <author>Emily Johnson</author>
+            
+    <title>Processing Images with XML</title>
+            
+    <booktitle>XML Conference 2019</booktitle>
+            
+    <year>2019</year>
+            
+    <url>http://example.org/conf/xml19/paper.pdf</url>
+        
+  </inproceedings>
+      
+  <www key="homepages/p/Example" mdate="2021-01-01">
+            
+    <author>Alice Example</author>
+            
+    <title>Personal Homepage of Alice</title>
+            
+    <url>http://example.org/~alice</url>
+            
+    <note type="photo">http://example.org/photos/AliceExample.png</note>
+        
+  </www>
+      
+  <!--  NOUVELLES ENTRÉES POUR CNRIA2022  -->
+      
+  <inproceedings key="conf/cnria/Dupont22" mdate="2022-06-30">
+            
+    <author>Jean Dupont</author>
+            
+    <author>Marie Curie</author>
+            
+    <title>Advances in Urban Mobility Payments</title>
+            
+    <booktitle>CNRIA2022</booktitle>
+            
+    <year>2022</year>
+            
+    <url>http://example.org/conf/cnria22/dupont.pdf</url>
+        
+  </inproceedings>
+      
+  <inproceedings key="conf/cnria/Sow22" mdate="2022-07-05">
+            
+    <author>Fatou Sow</author>
+            
+    <title>Machine Learning pour la classification de riz urbain</title>
+            
+    <booktitle>CNRIA2022</booktitle>
+            
+    <year>2022</year>
+            
+    <url>http://example.org/conf/cnria22/sow.pdf</url>
+        
+  </inproceedings>
+  
+</dblp>

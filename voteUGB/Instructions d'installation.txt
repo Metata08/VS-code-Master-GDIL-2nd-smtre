@@ -1,0 +1,30 @@
+#> git clone https://github.com/Metata08/projet_Dev_WEB_23-24.git 
+#> cd projet_Dev_WEB_23-24/voteUGB
+#> composer install 
+#> php artisan key:generate
+
+	Modifier le fichier .env pour configurer la base de données comme ceci
+		DB_CONNECTION=mysql 
+		DB_HOST=127.0.0.1 
+		DB_PORT=3306 
+		DB_DATABASE=ugbvote 
+		DB_USERNAME=root 
+		DB_PASSWORD= 
+
+#> php artisan migrate
+#> php artisan db:seed 
+#> php artisan serve
+
+Accédez ensuite à http://127.0.0.1:8000 Pour Etudiant
+Accédez à : http://127.0.0.1:8000/admin Pour admin
+
+
+
+
+étudiants
+	email : ameth@gmail.com
+	password : ameth31
+
+admin
+	email : admin@gmail.com
+	password : admin123

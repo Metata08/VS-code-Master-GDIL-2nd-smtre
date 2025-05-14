@@ -1,0 +1,19 @@
+Les differentes etapes pour crer un client avec le ws de la calculatrice.
+
+1- telechager le fichier WSDL : http://www.dneonline.com/calculator.asmx?wsdl
+
+2-Générer les fichiers C++:
+
+    * Utilisez l'outil wsdl2h pour convertir le WSDL en un fichier d'en-tête C++  en tappant la commande : "wsdl2h -o calculator.h calculator.wsdl"
+         Resultat : Cela génère un fichier calculator.h
+
+    * Ensuite, utilisez soapcpp2 pour générer les fichiers sources C++ en tappant la commande : "soapcpp2 -j -CL -I/usr/local/share/gsoap/import calculator.h"
+        Resultat :Cela génère plusieurs fichiers, dont :
+
+                    soapStub.h : Les définitions des classes et méthodes.
+
+                    soapCalculatorProxy.h et soapCalculatorProxy.cpp : Le proxy client.
+
+                    Calculator.nsmap : Le fichier de mapping des namespaces.
+
+3- Écrire le client C++

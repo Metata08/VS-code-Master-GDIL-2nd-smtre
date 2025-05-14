@@ -9,17 +9,17 @@ public class HopcroftKarpSwing extends JFrame {
     private static final int INF = Integer.MAX_VALUE;
 
     private int[] pairU, pairV, dist;
-    private java.util.List<Integer>[] graph; // Utilisation explicite de java.util.List
+    private java.util.List<Integer>[] graph;
     private int U, V;
 
     private JTextField uField, vField;
-    private JTextArea edgeArea;
+    private JTextArea edgeArea, logArea;
     private JButton calculateButton;
     private GraphPanel graphPanel;
 
     public HopcroftKarpSwing() {
         setTitle("Hopcroft-Karp Algorithm");
-        setSize(800, 600);
+        setSize(1000, 800); // Taille augmentée pour mieux afficher les logs
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -41,12 +41,18 @@ public class HopcroftKarpSwing extends JFrame {
         graphPanel = new GraphPanel();
         add(graphPanel, BorderLayout.CENTER);
 
+        // Zone de texte pour les logs
+        logArea = new JTextArea();
+        logArea.setEditable(false);
+        JScrollPane logScroll = new JScrollPane(logArea);
+        add(logScroll, BorderLayout.EAST);
+
         // Bouton pour calculer
         calculateButton = new JButton("Calculer le couplage maximum");
         calculateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                calculateMatching();
+                new Thread(() -> calculateMatching()).start(); // Lancer le calcul dans un thread séparé
             }
         });
         add(calculateButton, BorderLayout.SOUTH);
@@ -69,15 +75,22 @@ public class HopcroftKarpSwing extends JFrame {
         graph[u].add(v);
     }
 
-    public int maxMatching() {
+    public int maxMatching() throws InterruptedException {
         Arrays.fill(pairU, NIL);
         Arrays.fill(pairV, NIL);
         int result = 0;
 
         while (bfs()) {
+            log("Nouvelle itération BFS");
+            updateGraphPanel(); // Mettre à jour le graphe après chaque BFS
+            Thread.sleep(1000); // Pause pour visualiser l'étape
+
             for (int u = 1; u <= U; u++) {
                 if (pairU[u] == NIL && dfs(u)) {
                     result++;
+                    log("Couplage trouvé entre U" + u + " et V" + pairU[u]);
+                    updateGraphPanel(); // Mettre à jour le graphe après chaque couplage trouvé
+                    Thread.sleep(1000); // Pause pour visualiser l'étape
                 }
             }
         }
@@ -146,15 +159,27 @@ public class HopcroftKarpSwing extends JFrame {
             // Calculer le couplage maximum
             int maxMatching = maxMatching();
 
-            // Mettre à jour la représentation graphique
-            graphPanel.setGraph(graph, pairU, U, V);
-            graphPanel.repaint();
-
             // Afficher le résultat
+            log("Taille du couplage maximum : " + maxMatching);
             JOptionPane.showMessageDialog(this, "Taille du couplage maximum : " + maxMatching);
         } catch (Exception e) {
+            log("Erreur : " + e.getMessage());
             JOptionPane.showMessageDialog(this, "Erreur : Vérifiez les entrées.", "Erreur", JOptionPane.ERROR_MESSAGE);
         }
+    }
+
+    private void log(String message) {
+        SwingUtilities.invokeLater(() -> {
+            logArea.append(message + "\n");
+            logArea.setCaretPosition(logArea.getDocument().getLength()); // Faire défiler vers le bas
+        });
+    }
+
+    private void updateGraphPanel() {
+        SwingUtilities.invokeLater(() -> {
+            graphPanel.setGraph(graph, pairU, U, V);
+            graphPanel.repaint();
+        });
     }
 
     public static void main(String[] args) {
@@ -235,3 +260,10 @@ public class HopcroftKarpSwing extends JFrame {
         }
     }
 }
+
+// a titre d'exemples 
+// les entrees :
+
+//  4 
+//  4  
+//  1-2,1-3,2-1,3-2,4-3,4-4 

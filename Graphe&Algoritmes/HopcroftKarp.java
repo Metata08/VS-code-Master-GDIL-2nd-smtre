@@ -95,6 +95,11 @@ public class HopcroftKarp {
         hk.addEdge(4, 3);
         hk.addEdge(4, 4);
 
+
+
+       
+
+
         int maxMatching = hk.maxMatching();
         System.out.println("Taille du couplage maximum : " + maxMatching);
     }

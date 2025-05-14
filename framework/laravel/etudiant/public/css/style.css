@@ -1,0 +1,37 @@
+.titre_logo{
+    color: #E95420;
+    font-family: 'noto serif cjk sc';
+    font-weight: bolder;
+}
+
+.bar_menu{
+    
+    background-color: #E95420;
+    color: aliceblue     ;
+    font-size: large;
+    font-weight: bolder ;
+    font-family:'c059';
+padding: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-link:hover {
+    color: #000204; /* Couleur du texte au survol */
+}
+
+.space {
+    top:25px;
+    color: #E95420;
+    margin-top: 80px;
+}
+
+.titre {    
+    
+
+    margin:25px 0;
+    
+}
+
+.foot:p{
+    color: white;
+}
