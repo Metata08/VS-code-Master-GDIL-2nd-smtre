@@ -1,4 +1,4 @@
-```graph TD
+``` graph TD
     subgraph Schéma en Étoile 2
         B[<b>Fait_Ressources_Sante</b><br/><i>(Table de Faits)</i>]
 
