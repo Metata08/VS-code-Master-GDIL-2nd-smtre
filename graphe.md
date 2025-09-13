@@ -1,4 +1,4 @@
-graph TD
+```graph TD
     subgraph Schéma en Étoile 2
         B[<b>Fait_Ressources_Sante</b><br/><i>(Table de Faits)</i>]
 
@@ -55,4 +55,4 @@ graph TD
     style D7 fill:#bbf,stroke:#333,stroke-width:2px
     style D8 fill:#bbf,stroke:#333,stroke-width:2px
     style D9 fill:#bbf,stroke:#333,stroke-width:2px
-    style D10 fill:#bbf,stroke:#333,stroke-width:2px
+    style D10 fill:#bbf,stroke:#333,stroke-width:2px ```
